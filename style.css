@@ -1,0 +1,719 @@
+/* ==============================
+        GOOGLE FONT
+============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==============================
+        GLOBAL
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#141414;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ==============================
+        NAVBAR
+============================== */
+
+.navbar{
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.45),
+        transparent
+    );
+}
+
+.logo{
+    color:#E50914 !important;
+    letter-spacing:2px;
+}
+
+.logo:hover{
+    text-shadow:0 0 15px #E50914;
+}
+
+/* ==============================
+        NAV LINKS
+============================== */
+
+.nav-link{
+    color:white !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#E50914 !important;
+}
+
+/* ==============================
+        HERO
+============================== */
+
+.hero{
+    position:relative;
+}
+
+.hero video{
+    object-fit:cover;
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(to top,#141414 8%,transparent 45%),
+
+    linear-gradient(to right,
+
+    rgba(0,0,0,.9),
+
+    rgba(0,0,0,.4),
+
+    transparent);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:650px;
+
+    animation:fadeLeft 1.2s ease;
+
+}
+
+.description{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+/* ==============================
+        BUTTONS
+============================== */
+
+.btn-danger{
+
+    background:#E50914;
+
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#ff1f2d;
+
+}
+/* ==============================
+      CONTINUE WATCHING
+============================== */
+
+.continue-card{
+
+    background:#1f1f1f;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.continue-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(229,9,20,.35);
+
+}
+
+.continue-img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.continue-content{
+
+    padding:20px;
+
+}
+
+.continue-content h5{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.continue-content small{
+
+    color:#bbbbbb;
+
+}
+
+.progress{
+
+    height:8px;
+
+    border-radius:20px;
+
+    background:#444;
+
+}
+
+.progress-bar{
+
+    border-radius:20px;
+
+}
+
+.continue-content p{
+
+    color:#dddddd;
+
+    font-size:14px;
+
+}
+
+/* ==============================
+        MOVIES
+============================== */
+
+.movie-card{
+
+    width:100%;
+
+    aspect-ratio:2/3;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,.45);
+
+}
+
+.movie-card:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 10px 35px rgba(229,9,20,.55);
+
+}
+
+/* Hide scrollbar */
+
+.row::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.row{
+
+    scrollbar-width:none;
+
+}
+
+/* ==============================
+        SEARCH
+============================== */
+
+.search-input{
+
+    width:0;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.d-flex:hover .search-input{
+
+    width:220px;
+
+    opacity:1;
+
+}
+
+/* ==============================
+        DROPDOWN
+============================== */
+
+.dropdown-menu{
+
+    background:#181818;
+
+    border:1px solid #333;
+
+}
+
+.dropdown-item{
+
+    color:white;
+
+}
+
+.dropdown-item:hover{
+
+    background:#E50914;
+
+    color:white;
+
+}
+.modal-content{
+
+    border-radius:18px;
+
+    border:1px solid #444;
+
+}
+
+.modal-body img{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.5);
+
+}
+
+.modal-body p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+.modal-content{
+
+    border-radius:15px;
+
+}
+
+.modal-title{
+
+    font-weight:bold;
+
+}
+
+/* ==============================
+        FOOTER
+============================== */
+
+footer{
+
+    background:#111;
+
+}
+
+/* ==============================
+        ANIMATION
+============================== */
+
+@keyframes fadeLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* ==============================
+        RESPONSIVE
+============================== */
+
+@media(max-width:992px){
+
+.hero-content{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+height:80vh;
+
+}
+
+.hero h1{
+
+font-size:2.5rem;
+
+}
+
+.movie-card:hover{
+
+transform:scale(1.03);
+
+}
+
+.search-input{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero .btn{
+
+margin-bottom:10px;
+
+}
+
+}
+
+/* =========================================================
+   MOVIE CARD HOVER POPUP 
+   ========================================================= */
+
+/* rows scroll sideways, which also clips them vertically.
+   padding makes room for the popup, the equal negative
+   margin keeps the page spacing exactly as it was */
+
+.movie-row{ padding:60px 0; margin-top:-60px; margin-bottom:-60px; }
+
+.movie-box{ position:relative; border-radius:10px; overflow:hidden; outline:none;
+            transition:transform .3s ease, box-shadow .3s ease; }
+
+.movie-box .movie-card{ display:block; }
+
+/* :focus-within makes it work on a tap as well as a hover */
+
+.movie-box:hover,
+.movie-box:focus-within{ transform:scale(1.2); z-index:20; transition-delay:.2s;
+                         box-shadow:0 18px 45px rgba(0,0,0,.75), 0 0 25px rgba(229,9,20,.45); }
+
+/* poster stays still so the panel lines up */
+
+.movie-box:hover .movie-card,
+.movie-box:focus-within .movie-card{ transform:none; box-shadow:none; }
+
+.movie-box:focus-visible{ box-shadow:0 0 0 3px #E50914; }
+
+/* edge cards grow inward so they are not cut off */
+
+.movie-row > div:first-child .movie-box{ transform-origin:left center; }
+.movie-row > div:last-child .movie-box{ transform-origin:right center; }
+
+/* ---------- info panel ---------- */
+
+.card-info{ position:absolute; left:0; right:0; bottom:0; padding:14px 10px 11px;
+            background:linear-gradient(to top, rgba(0,0,0,.96) 25%, rgba(0,0,0,.75) 60%, transparent);
+            opacity:0; transform:translateY(18px); transition:.35s; }
+
+.movie-box:hover .card-info,
+.movie-box:focus-within .card-info{ opacity:1; transform:translateY(0); transition-delay:.25s; }
+
+/* ---------- play / watch later / like ---------- */
+
+.ci-btn{ width:32px; height:32px; margin:0 8px 9px 0; border-radius:50%;
+         display:inline-flex; align-items:center; justify-content:center;
+         background:rgba(255,255,255,.15); border:1.5px solid rgba(255,255,255,.6);
+         color:#fff; font-size:.9rem; line-height:1; cursor:pointer; transition:.25s; }
+
+.ci-btn:hover{ background:#fff; color:#141414; border-color:#fff; transform:scale(1.12); }
+.ci-btn:active{ background:#E50914; border-color:#E50914; color:#fff; }
+
+.ci-play{ background:#fff; color:#141414; border-color:#fff; }
+.ci-play:hover{ background:#E50914; color:#fff; border-color:#E50914; }
+
+/* ---------- match / duration line ---------- */
+
+.card-meta{ display:block; font-size:.72rem; color:#ddd; }
+.card-meta b{ color:#46d369; font-weight:600; }
+.card-meta em{ border:1px solid #777; border-radius:3px; padding:0 4px;
+               font-size:.62rem; font-style:normal; letter-spacing:.5px; }
+/* ==============================
+        MY FAVOURITES
+============================== */
+
+#my-favourites{
+
+    background:#181818;
+
+    border-top:1px solid #2d2d2d;
+
+}
+
+#my-favourites h2{
+
+    color:#E50914;
+
+    letter-spacing:1px;
+
+}
+
+#my-favourites h3{
+
+    color:#fff;
+
+}
+
+#my-favourites hr{
+
+    border-color:#444;
+
+}
+
+.table{
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#E50914;
+
+    color:white;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#222;
+
+}
+
+.table td img{
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.table td img:hover{
+
+    transform:scale(1.08);
+
+}
+
+.form-control{
+
+    background:#222;
+
+    border:1px solid #444;
+
+    color:white;
+
+}
+
+.form-control:focus{
+
+    background:#2b2b2b;
+
+    color:white;
+
+    border-color:#E50914;
+
+    box-shadow:0 0 10px rgba(229,9,20,.35);
+
+}
+
+.form-control::placeholder{
+
+    color:#999;
+
+}
+
+.form-label{
+
+    color:#ddd;
+
+    font-weight:500;
+
+}
+
+#my-favourites .btn-danger{
+
+    transition:.3s;
+
+}
+
+#my-favourites .btn-danger:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(229,9,20,.4);
+
+}
+
+#my-favourites .btn-success{
+
+    background:#198754;
+
+    border:none;
+
+}
+
+#my-favourites .btn-success:hover{
+
+    background:#157347;
+
+}
+
+#my-favourites .btn-outline-danger:hover{
+
+    background:#E50914;
+
+    color:white;
+
+}
+
+.table-responsive{
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+/* ==============================
+        GLASS CARD
+============================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:white;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#E50914;
+
+    box-shadow:0 20px 45px rgba(229,9,20,.35);
+
+}
+
+.glass-card h4{
+
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+.glass-card p{
+
+    color:#d6d6d6;
+
+    margin-top:10px;
+
+}
+
+/* ---------- responsive ---------- */
+
+@media(min-width:1600px){
+.movie-row{ padding:80px 0; margin-top:-80px; margin-bottom:-80px; }
+}
+
+@media(max-width:768px){
+.movie-row{ padding:35px 0; margin-top:-35px; margin-bottom:-35px; }
+.movie-box:hover,
+.movie-box:focus-within{ transform:scale(1.12); }
+.card-info{ padding:9px 7px 8px; }
+.ci-btn{ width:28px; height:28px; font-size:.78rem; margin:0 6px 6px 0; }
+.card-meta{ font-size:.65rem; }
+}
+
+@media(prefers-reduced-motion:reduce){
+.movie-box, .card-info, .ci-btn{ transition:none; }
+}
